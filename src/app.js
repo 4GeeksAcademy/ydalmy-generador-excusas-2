@@ -11,17 +11,24 @@ function obternerNumeroAleatorio(max) {
 
 window.onload = function() {
   //write your code here
-  let arreglo =["my children"  ,   "my brother" , " my Car" , "my friend"];
-  let action= ["ate" , "crash" , "broke" , "paid"]
+  let who =["my children"  ,   "my brother" , " my aunt" , "my friend"];
+  let actie = ["ate" , "crash" , "broke" , "paid"]
+  let wat =["my house", "the bike", " the bill", "The bread"];
+  let wanneer =["after school","in the restaurant", "while I was sleeping","while I was driving"]
   
-  let indice = obternerNumeroAleatorio(arreglo.length);
-  let ind = obternerNumeroAleatorio (action.length);
+  let indice = obternerNumeroAleatorio(who.length);
+  let ind = obternerNumeroAleatorio (actie.length);
+  let where = obternerNumeroAleatorio (wat.length);
+  let when =obternerNumeroAleatorio (wanneer.length);
   
-  let palabra = arreglo[indice];
-  let word = action[ind];
+  var palabra  = who [indice];
+  var accion= actie[ind];
+  var donde = wat[where];
+  var cuando = wanneer[when];
+
   
   let elementoP = document.getElementById("excuse");
-  elementoP.innerHTML = palabra  + " "  + word ; 
+  elementoP.innerHTML = palabra  + " "  + accion + " " + donde + " " + cuando;
 
   console.log(palabra);
 
