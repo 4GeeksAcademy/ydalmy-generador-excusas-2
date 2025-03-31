@@ -9,30 +9,30 @@ function obternerNumeroAleatorio(max) {
   return Math.floor(Math.random() * max);
 }
 
-window.onload = function() {
+window.onload = function () {
   //write your code here
-  let who =["my children"  ,   "my brother" , " my aunt" , "my friend"];
-  let actie = ["ate" , "crash" , "broke" , "paid"]
-  let wat =["my house", "the bike", " the bill", "The bread"];
-  let wanneer =["after school","in the restaurant", "while I was sleeping","while I was driving"]
-  
-  let indice = obternerNumeroAleatorio(who.length);
-  let ind = obternerNumeroAleatorio (actie.length);
-  let where = obternerNumeroAleatorio (wat.length);
-  let when =obternerNumeroAleatorio (wanneer.length);
-  
-  var palabra  = who [indice];
-  var accion= actie[ind];
-  var donde = wat[where];
-  var cuando = wanneer[when];
+  let who = ["my children", "my brother", " my aunt", "my friend"];
+  let action = ["ate", "crash", "broke", "paid"]
+  let what = ["my house", "the bike", " the bill", "The bread"];
+  let when = ["after school", "in the restaurant", "while I was sleeping", "while I was driving"]
 
-  
+  let indiceWho = obternerNumeroAleatorio(who.length);
+  let indiceAction = obternerNumeroAleatorio(action.length);
+  let indiceWhat = obternerNumeroAleatorio(what.length);
+  let indiceWhen = obternerNumeroAleatorio(when.length);
+
+  var wordWho = who[indiceWho];
+  var wordAction = action[indiceAction];
+  var wordWhat = what[indiceWhat];
+  var wordWhen = when[indiceWhen];
+
+
   let elementoP = document.getElementById("excuse");
-  elementoP.innerHTML = palabra  + " "  + accion + " " + donde + " " + cuando;
+  elementoP.innerHTML = wordWho + " " + wordAction + " " + wordWhat + " " + wordWhen;
 
-  console.log(palabra);
 
-  
-  
+
+
+
 };
 
